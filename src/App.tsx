@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CameraLayout from './layout/CameraLayout';
+import Button from "@material-ui/core/Button";
 import './App.css';
 
 
@@ -11,9 +12,9 @@ const App = () => {
     <div className="App">
       <header className="App-header">
         <p>
-          Edit <code>src/App.tsx</code> and save to reload.
+          Photo Upload Page.
         </p>
-        <button onClick={() => setShowCamera(true)}> Camera </button>
+        <Button variant="contained" onClick={() => setShowCamera(true)}> Camera </Button>
         {
           showCamera? (
             <CameraLayout shouldShow={showCamera} changeShouldShowCamera={setShowCamera}/>

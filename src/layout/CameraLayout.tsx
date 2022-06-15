@@ -141,7 +141,7 @@ const CameraLayout = (props: any) => {
             setShowImage(!showImage);
           }}
         >
-					<button onClick={() => props.changeShouldShowCamera(false)}> Close </button>
+				<button onClick={() => props.changeShouldShowCamera(false)}> Close </button>
 				</FullScreenImagePreview>
       ) : (
         <Camera
